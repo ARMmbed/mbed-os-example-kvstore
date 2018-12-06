@@ -6,7 +6,9 @@
         "*": {
             "platform.stdio-baud-rate": 115200,
             "platform.default-serial-baud-rate": 115200,
-            "platform.stdio-convert-newlines": 1
+            "platform.stdio-convert-newlines": 1,
+            "storage.storage_type": "TDB_INTERNAL",
+            "target.components_add": ["FLASHIAP"]
         }
     }
 }
