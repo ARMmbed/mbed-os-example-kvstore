@@ -159,4 +159,4 @@ If you have problems, you can review the [documentation](https://os.mbed.com/doc
 for suggestions on what could be wrong and how to fix it.
 
 ## KVStore Configuration
-The Global KVStore API options can be set up in the higher level Mbes-OS KVSTore retargetting layer [json configuration](https://github.com/ARMmbed/mbed-os/blob/master/features/storage/kvstore/conf/mbed_lib.json)
+The Global KVStore API options can be set up in the higher level Mbed-OS KVSTore retargetting layer [json configuration](https://github.com/ARMmbed/mbed-os/blob/master/features/storage/kvstore/conf/mbed_lib.json)
