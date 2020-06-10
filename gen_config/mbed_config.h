@@ -22,56 +22,21 @@
 #define __MBED_CONFIG_DATA__
 
 // Configuration parameters
-#define ATT_NUM_SIMUL_NTF                                                     1                                                                                                // set by library:cordio
-#define ATT_NUM_SIMUL_WRITE_CMD                                               1                                                                                                // set by library:cordio
-#define BLE_FEATURE_EXTENDED_ADVERTISING                                      1                                                                                                // set by library:ble
-#define BLE_FEATURE_GATT_CLIENT                                               1                                                                                                // set by library:ble
-#define BLE_FEATURE_GATT_SERVER                                               1                                                                                                // set by library:ble
-#define BLE_FEATURE_PERIODIC_ADVERTISING                                      1                                                                                                // set by library:ble
-#define BLE_FEATURE_PHY_MANAGEMENT                                            1                                                                                                // set by library:ble
-#define BLE_FEATURE_PRIVACY                                                   1                                                                                                // set by library:ble
-#define BLE_FEATURE_SECURE_CONNECTIONS                                        1                                                                                                // set by library:ble
-#define BLE_FEATURE_SECURITY                                                  1                                                                                                // set by library:ble
-#define BLE_FEATURE_SIGNING                                                   1                                                                                                // set by library:ble
-#define BLE_FEATURE_WHITELIST                                                 1                                                                                                // set by library:ble
-#define BLE_ROLE_BROADCASTER                                                  1                                                                                                // set by library:ble
-#define BLE_ROLE_CENTRAL                                                      1                                                                                                // set by library:ble
-#define BLE_ROLE_OBSERVER                                                     1                                                                                                // set by library:ble
-#define BLE_ROLE_PERIPHERAL                                                   1                                                                                                // set by library:ble
-#define CLOCK_SOURCE                                                          USE_PLL_MSI                                                                                      // set by target:DISCO_L475VG_IOT01A
-#define DM_CONN_MAX                                                           3                                                                                                // set by library:cordio
-#define DM_NUM_ADV_SETS                                                       3                                                                                                // set by library:cordio
-#define DM_NUM_PHYS                                                           3                                                                                                // set by library:cordio
-#define DM_SYNC_MAX                                                           1                                                                                                // set by library:cordio
-#define L2C_COC_CHAN_MAX                                                      1                                                                                                // set by library:cordio
-#define L2C_COC_REG_MAX                                                       1                                                                                                // set by library:cordio
-#define LPTICKER_DELAY_TICKS                                                  0                                                                                                // set by target:DISCO_L475VG_IOT01A
 #define MBED_CONF_ALT1250_PPP_BAUDRATE                                        115200                                                                                           // set by library:ALT1250_PPP
 #define MBED_CONF_ALT1250_PPP_PROVIDE_DEFAULT                                 0                                                                                                // set by library:ALT1250_PPP
-#define MBED_CONF_ATMEL_RF_ASSUME_SPACED_SPI                                  1                                                                                                // set by library:atmel-rf[STM]
+#define MBED_CONF_ATMEL_RF_ASSUME_SPACED_SPI                                  0                                                                                                // set by library:atmel-rf
 #define MBED_CONF_ATMEL_RF_FULL_SPI_SPEED                                     7500000                                                                                          // set by library:atmel-rf
 #define MBED_CONF_ATMEL_RF_FULL_SPI_SPEED_BYTE_SPACING                        250                                                                                              // set by library:atmel-rf
 #define MBED_CONF_ATMEL_RF_IRQ_THREAD_STACK_SIZE                              1024                                                                                             // set by library:atmel-rf
 #define MBED_CONF_ATMEL_RF_LOW_SPI_SPEED                                      3750000                                                                                          // set by library:atmel-rf
 #define MBED_CONF_ATMEL_RF_PROVIDE_DEFAULT                                    0                                                                                                // set by library:atmel-rf
 #define MBED_CONF_ATMEL_RF_USE_SPI_SPACING_API                                0                                                                                                // set by library:atmel-rf
-#define MBED_CONF_BLE_PRESENT                                                 1                                                                                                // set by library:ble
-#define MBED_CONF_BLUENRG_MS_SPI_IRQ                                          PE_6                                                                                             // set by library:bluenrg_ms[DISCO_L475VG_IOT01A]
-#define MBED_CONF_BLUENRG_MS_SPI_MISO                                         PC_11                                                                                            // set by library:bluenrg_ms[DISCO_L475VG_IOT01A]
-#define MBED_CONF_BLUENRG_MS_SPI_MOSI                                         PC_12                                                                                            // set by library:bluenrg_ms[DISCO_L475VG_IOT01A]
-#define MBED_CONF_BLUENRG_MS_SPI_NCS                                          PD_13                                                                                            // set by library:bluenrg_ms[DISCO_L475VG_IOT01A]
-#define MBED_CONF_BLUENRG_MS_SPI_RESET                                        PA_8                                                                                             // set by library:bluenrg_ms[DISCO_L475VG_IOT01A]
-#define MBED_CONF_BLUENRG_MS_SPI_SCK                                          PC_10                                                                                            // set by library:bluenrg_ms[DISCO_L475VG_IOT01A]
-#define MBED_CONF_BLUENRG_MS_VALID_PUBLIC_BD_ADDRESS                          0                                                                                                // set by library:bluenrg_ms
 #define MBED_CONF_CELLULAR_CONTROL_PLANE_OPT                                  0                                                                                                // set by library:cellular
 #define MBED_CONF_CELLULAR_DEBUG_AT                                           0                                                                                                // set by library:cellular
 #define MBED_CONF_CELLULAR_MAX_CP_DATA_RECV_LEN                               1358                                                                                             // set by library:cellular
 #define MBED_CONF_CELLULAR_RANDOM_MAX_START_DELAY                             0                                                                                                // set by library:cellular
 #define MBED_CONF_CELLULAR_USE_APN_LOOKUP                                     0                                                                                                // set by library:cellular
 #define MBED_CONF_CELLULAR_USE_SMS                                            0                                                                                                // set by library:cellular
-#define MBED_CONF_CORDIO_DESIRED_ATT_MTU                                      23                                                                                               // set by library:cordio
-#define MBED_CONF_CORDIO_MAX_PREPARED_WRITES                                  4                                                                                                // set by library:cordio
-#define MBED_CONF_CORDIO_RX_ACL_BUFFER_SIZE                                   70                                                                                               // set by library:cordio
 #define MBED_CONF_DRIVERS_QSPI_CSN                                            QSPI_FLASH1_CSN                                                                                  // set by library:drivers
 #define MBED_CONF_DRIVERS_QSPI_IO0                                            QSPI_FLASH1_IO0                                                                                  // set by library:drivers
 #define MBED_CONF_DRIVERS_QSPI_IO1                                            QSPI_FLASH1_IO1                                                                                  // set by library:drivers
@@ -147,6 +112,8 @@
 #define MBED_CONF_GEMALTO_CINTERION_PROVIDE_DEFAULT                           0                                                                                                // set by library:GEMALTO_CINTERION
 #define MBED_CONF_GENERIC_AT3GPP_BAUDRATE                                     115200                                                                                           // set by library:GENERIC_AT3GPP
 #define MBED_CONF_GENERIC_AT3GPP_PROVIDE_DEFAULT                              0                                                                                                // set by library:GENERIC_AT3GPP
+#define MBED_CONF_KINETIS_EMAC_RX_RING_LEN                                    2                                                                                                // set by library:kinetis-emac
+#define MBED_CONF_KINETIS_EMAC_TX_RING_LEN                                    1                                                                                                // set by library:kinetis-emac
 #define MBED_CONF_LORA_ADR_ON                                                 1                                                                                                // set by library:lora
 #define MBED_CONF_LORA_APPLICATION_EUI                                        {0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00}                                                 // set by library:lora
 #define MBED_CONF_LORA_APPLICATION_KEY                                        {0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00} // set by library:lora
@@ -184,7 +151,7 @@
 #define MBED_CONF_LWIP_MBOX_SIZE                                              8                                                                                                // set by library:lwip
 #define MBED_CONF_LWIP_MEMP_NUM_TCPIP_MSG_INPKT                               8                                                                                                // set by library:lwip
 #define MBED_CONF_LWIP_MEMP_NUM_TCP_SEG                                       16                                                                                               // set by library:lwip
-#define MBED_CONF_LWIP_MEM_SIZE                                               2310                                                                                             // set by library:lwip[STM]
+#define MBED_CONF_LWIP_MEM_SIZE                                               33270                                                                                            // set by library:lwip[Freescale]
 #define MBED_CONF_LWIP_NUM_NETBUF                                             8                                                                                                // set by library:lwip
 #define MBED_CONF_LWIP_NUM_PBUF                                               8                                                                                                // set by library:lwip
 #define MBED_CONF_LWIP_PBUF_POOL_SIZE                                         5                                                                                                // set by library:lwip
@@ -266,7 +233,7 @@
 #define MBED_CONF_NSAPI_SOCKET_STATS_MAX_COUNT                                10                                                                                               // set by library:nsapi
 #define MBED_CONF_PLATFORM_CALLBACK_COMPARABLE                                1                                                                                                // set by library:platform
 #define MBED_CONF_PLATFORM_CALLBACK_NONTRIVIAL                                0                                                                                                // set by library:platform
-#define MBED_CONF_PLATFORM_CRASH_CAPTURE_ENABLED                              1                                                                                                // set by library:platform[DISCO_L475VG_IOT01A]
+#define MBED_CONF_PLATFORM_CRASH_CAPTURE_ENABLED                              1                                                                                                // set by library:platform[K64F]
 #define MBED_CONF_PLATFORM_CTHUNK_COUNT_MAX                                   8                                                                                                // set by library:platform
 #define MBED_CONF_PLATFORM_DEFAULT_SERIAL_BAUD_RATE                           9600                                                                                             // set by library:platform
 #define MBED_CONF_PLATFORM_ERROR_ALL_THREADS_INFO                             0                                                                                                // set by library:platform
@@ -274,7 +241,7 @@
 #define MBED_CONF_PLATFORM_ERROR_HIST_ENABLED                                 0                                                                                                // set by library:platform
 #define MBED_CONF_PLATFORM_ERROR_HIST_SIZE                                    4                                                                                                // set by library:platform
 #define MBED_CONF_PLATFORM_ERROR_REBOOT_MAX                                   1                                                                                                // set by library:platform
-#define MBED_CONF_PLATFORM_FATAL_ERROR_AUTO_REBOOT_ENABLED                    1                                                                                                // set by library:platform[DISCO_L475VG_IOT01A]
+#define MBED_CONF_PLATFORM_FATAL_ERROR_AUTO_REBOOT_ENABLED                    1                                                                                                // set by library:platform[K64F]
 #define MBED_CONF_PLATFORM_MAX_ERROR_FILENAME_LEN                             16                                                                                               // set by library:platform
 #define MBED_CONF_PLATFORM_MINIMAL_PRINTF_ENABLE_64_BIT                       1                                                                                                // set by library:platform
 #define MBED_CONF_PLATFORM_MINIMAL_PRINTF_ENABLE_FLOATING_POINT               0                                                                                                // set by library:platform
@@ -293,16 +260,6 @@
 #define MBED_CONF_PPP_IPV6_ENABLED                                            0                                                                                                // set by library:ppp
 #define MBED_CONF_PPP_MBED_EVENT_QUEUE                                        0                                                                                                // set by library:ppp
 #define MBED_CONF_PPP_THREAD_STACKSIZE                                        816                                                                                              // set by library:ppp
-#define MBED_CONF_QSPIF_QSPI_CSN                                              MBED_CONF_DRIVERS_QSPI_CSN                                                                       // set by library:qspif
-#define MBED_CONF_QSPIF_QSPI_FREQ                                             8000000                                                                                          // set by library:qspif[MX25R6435F]
-#define MBED_CONF_QSPIF_QSPI_IO0                                              MBED_CONF_DRIVERS_QSPI_IO0                                                                       // set by library:qspif
-#define MBED_CONF_QSPIF_QSPI_IO1                                              MBED_CONF_DRIVERS_QSPI_IO1                                                                       // set by library:qspif
-#define MBED_CONF_QSPIF_QSPI_IO2                                              MBED_CONF_DRIVERS_QSPI_IO2                                                                       // set by library:qspif
-#define MBED_CONF_QSPIF_QSPI_IO3                                              MBED_CONF_DRIVERS_QSPI_IO3                                                                       // set by library:qspif
-#define MBED_CONF_QSPIF_QSPI_MIN_PROG_SIZE                                    256                                                                                              // set by library:qspif
-#define MBED_CONF_QSPIF_QSPI_MIN_READ_SIZE                                    1                                                                                                // set by library:qspif
-#define MBED_CONF_QSPIF_QSPI_POLARITY_MODE                                    0                                                                                                // set by library:qspif
-#define MBED_CONF_QSPIF_QSPI_SCK                                              MBED_CONF_DRIVERS_QSPI_SCK                                                                       // set by library:qspif
 #define MBED_CONF_QUECTEL_BC95_BAUDRATE                                       9600                                                                                             // set by library:QUECTEL_BC95
 #define MBED_CONF_QUECTEL_BC95_PROVIDE_DEFAULT                                0                                                                                                // set by library:QUECTEL_BC95
 #define MBED_CONF_QUECTEL_BG96_BAUDRATE                                       115200                                                                                           // set by library:QUECTEL_BG96
@@ -319,7 +276,7 @@
 #define MBED_CONF_RTOS_API_PRESENT                                            1                                                                                                // set by library:rtos-api
 #define MBED_CONF_RTOS_EVFLAGS_NUM                                            0                                                                                                // set by library:rtos
 #define MBED_CONF_RTOS_IDLE_THREAD_STACK_SIZE                                 512                                                                                              // set by library:rtos
-#define MBED_CONF_RTOS_IDLE_THREAD_STACK_SIZE_DEBUG_EXTRA                     128                                                                                              // set by library:rtos[STM]
+#define MBED_CONF_RTOS_IDLE_THREAD_STACK_SIZE_DEBUG_EXTRA                     0                                                                                                // set by library:rtos
 #define MBED_CONF_RTOS_IDLE_THREAD_STACK_SIZE_TICKLESS_EXTRA                  256                                                                                              // set by library:rtos
 #define MBED_CONF_RTOS_MAIN_THREAD_STACK_SIZE                                 4096                                                                                             // set by library:rtos
 #define MBED_CONF_RTOS_MSGQUEUE_DATA_SIZE                                     0                                                                                                // set by library:rtos
@@ -335,18 +292,17 @@
 #define MBED_CONF_S2LP_PROVIDE_DEFAULT                                        0                                                                                                // set by library:s2lp
 #define MBED_CONF_SARA4_PPP_BAUDRATE                                          115200                                                                                           // set by library:SARA4_PPP
 #define MBED_CONF_SARA4_PPP_PROVIDE_DEFAULT                                   0                                                                                                // set by library:SARA4_PPP
-#define MBED_CONF_STM32_EMAC_ETH_PHY_ADDRESS                                  0                                                                                                // set by library:stm32-emac
-#define MBED_CONF_STM32_EMAC_ETH_PHY_AUTONEGOTIATION                          ETH_AUTONEGOTIATION_ENABLE                                                                       // set by library:stm32-emac
-#define MBED_CONF_STM32_EMAC_ETH_PHY_DUPLEXMODE                               ETH_MODE_FULLDUPLEX                                                                              // set by library:stm32-emac
-#define MBED_CONF_STM32_EMAC_ETH_PHY_DUPLEX_STATUS                            0x0010                                                                                           // set by library:stm32-emac
-#define MBED_CONF_STM32_EMAC_ETH_PHY_MEDIA_INTERFACE                          ETH_MEDIA_INTERFACE_RMII                                                                         // set by library:stm32-emac
-#define MBED_CONF_STM32_EMAC_ETH_PHY_RESET_DELAY                              500                                                                                              // set by library:stm32-emac
-#define MBED_CONF_STM32_EMAC_ETH_PHY_SPEED                                    ETH_SPEED_100M                                                                                   // set by library:stm32-emac
-#define MBED_CONF_STM32_EMAC_ETH_PHY_SPEED_STATUS                             0x0004                                                                                           // set by library:stm32-emac
-#define MBED_CONF_STM32_EMAC_ETH_PHY_STATUS_REGISTER                          31                                                                                               // set by library:stm32-emac
-#define MBED_CONF_STM32_EMAC_ETH_RXBUFNB                                      4                                                                                                // set by library:stm32-emac
-#define MBED_CONF_STM32_EMAC_ETH_TXBUFNB                                      4                                                                                                // set by library:stm32-emac
-#define MBED_CONF_STM32_EMAC_THREAD_STACKSIZE                                 1024                                                                                             // set by library:stm32-emac
+#define MBED_CONF_SD_CMD0_IDLE_STATE_RETRIES                                  5                                                                                                // set by library:sd
+#define MBED_CONF_SD_CMD_TIMEOUT                                              10000                                                                                            // set by library:sd
+#define MBED_CONF_SD_CRC_ENABLED                                              0                                                                                                // set by library:sd
+#define MBED_CONF_SD_FSFAT_SDCARD_INSTALLED                                   1                                                                                                // set by library:sd
+#define MBED_CONF_SD_INIT_FREQUENCY                                           100000                                                                                           // set by library:sd
+#define MBED_CONF_SD_SPI_CLK                                                  SPI_SCK                                                                                          // set by library:sd
+#define MBED_CONF_SD_SPI_CS                                                   SPI_CS                                                                                           // set by library:sd
+#define MBED_CONF_SD_SPI_MISO                                                 SPI_MISO                                                                                         // set by library:sd
+#define MBED_CONF_SD_SPI_MOSI                                                 SPI_MOSI                                                                                         // set by library:sd
+#define MBED_CONF_SD_TEST_BUFFER                                              8192                                                                                             // set by library:sd
+#define MBED_CONF_SD_TRX_FREQUENCY                                            1000000                                                                                          // set by library:sd
 #define MBED_CONF_STORAGE_DEFAULT_KV                                          kv                                                                                               // set by library:storage
 #define MBED_CONF_STORAGE_FILESYSTEM_BLOCKDEVICE                              default                                                                                          // set by library:storage_filesystem
 #define MBED_CONF_STORAGE_FILESYSTEM_EXTERNAL_BASE_ADDRESS                    0                                                                                                // set by library:storage_filesystem
@@ -362,7 +318,7 @@
 #define MBED_CONF_STORAGE_FILESYSTEM_NO_RBP_FOLDER_PATH                       kvstore                                                                                          // set by library:storage_filesystem_no_rbp
 #define MBED_CONF_STORAGE_FILESYSTEM_NO_RBP_MOUNT_POINT                       kv                                                                                               // set by library:storage_filesystem_no_rbp
 #define MBED_CONF_STORAGE_FILESYSTEM_RBP_INTERNAL_SIZE                        0                                                                                                // set by library:storage_filesystem
-#define MBED_CONF_STORAGE_STORAGE_TYPE                                        default                                                                                          // set by library:storage
+#define MBED_CONF_STORAGE_STORAGE_TYPE                                        TDB_INTERNAL                                                                                     // set by application[K64F]
 #define MBED_CONF_STORAGE_TDB_EXTERNAL_BLOCKDEVICE                            default                                                                                          // set by library:storage_tdb_external
 #define MBED_CONF_STORAGE_TDB_EXTERNAL_EXTERNAL_BASE_ADDRESS                  0                                                                                                // set by library:storage_tdb_external
 #define MBED_CONF_STORAGE_TDB_EXTERNAL_EXTERNAL_SIZE                          0                                                                                                // set by library:storage_tdb_external
@@ -375,13 +331,10 @@
 #define MBED_CONF_STORAGE_TDB_INTERNAL_INTERNAL_SIZE                          0                                                                                                // set by library:storage_tdb_internal
 #define MBED_CONF_TARGET_BOOT_STACK_SIZE                                      0x400                                                                                            // set by library:rtos[*]
 #define MBED_CONF_TARGET_CONSOLE_UART                                         1                                                                                                // set by target:Target
-#define MBED_CONF_TARGET_DEEP_SLEEP_LATENCY                                   4                                                                                                // set by target:MCU_STM32
-#define MBED_CONF_TARGET_INIT_US_TICKER_AT_BOOT                               1                                                                                                // set by target:MCU_STM32
-#define MBED_CONF_TARGET_LPTICKER_LPTIM                                       1                                                                                                // set by target:DISCO_L475VG_IOT01A
-#define MBED_CONF_TARGET_LPTICKER_LPTIM_CLOCK                                 1                                                                                                // set by target:MCU_STM32
-#define MBED_CONF_TARGET_LPUART_CLOCK_SOURCE                                  USE_LPUART_CLK_LSE|USE_LPUART_CLK_PCLK1                                                          // set by target:MCU_STM32
-#define MBED_CONF_TARGET_LSE_AVAILABLE                                        1                                                                                                // set by target:MCU_STM32
+#define MBED_CONF_TARGET_DEEP_SLEEP_LATENCY                                   0                                                                                                // set by target:Target
+#define MBED_CONF_TARGET_INIT_US_TICKER_AT_BOOT                               0                                                                                                // set by target:Target
 #define MBED_CONF_TARGET_MPU_ROM_END                                          0x0fffffff                                                                                       // set by target:Target
+#define MBED_CONF_TARGET_NETWORK_DEFAULT_INTERFACE_TYPE                       ETHERNET                                                                                         // set by target:K64F
 #define MBED_CONF_TARGET_TICKLESS_FROM_US_TICKER                              0                                                                                                // set by target:Target
 #define MBED_CONF_TARGET_XIP_ENABLE                                           0                                                                                                // set by target:Target
 #define MBED_CONF_TELIT_HE910_BAUDRATE                                        115200                                                                                           // set by library:TELIT_HE910
@@ -411,15 +364,12 @@
 #define MEM_ALLOC                                                             malloc                                                                                           // set by library:mbed-trace
 #define MEM_FREE                                                              free                                                                                             // set by library:mbed-trace
 #define PPP_DEBUG                                                             0                                                                                                // set by library:ppp
-#define SEC_CCM_CFG                                                           1                                                                                                // set by library:cordio
-#define SMP_DB_MAX_DEVICES                                                    3                                                                                                // set by library:cordio
 // Macros
 #define MBEDTLS_CIPHER_MODE_CTR                                                                                                                                                // defined by library:SecureStore
 #define MBEDTLS_CMAC_C                                                                                                                                                         // defined by library:SecureStore
 #define NSAPI_PPP_AVAILABLE                                                   (MBED_CONF_PPP_ENABLED || MBED_CONF_LWIP_PPP_ENABLED)                                            // defined by library:ppp
 #define NS_USE_EXTERNAL_MBED_TLS                                                                                                                                               // defined by library:nanostack
 #define UNITY_INCLUDE_CONFIG_H                                                                                                                                                 // defined by library:utest
-#define WSF_MS_PER_TICK                                                       1                                                                                                // defined by library:cordio
 #define _RTE_                                                                                                                                                                  // defined by library:rtos
 
 #endif
