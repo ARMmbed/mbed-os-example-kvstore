@@ -23,7 +23,15 @@ target_sources(${APP_TARGET}
         main.cpp
 )
 
-target_link_libraries(${APP_TARGET} mbed-os)
+target_link_libraries(${APP_TARGET}
+    mbed-os
+    mbed-os-storage-fat
+    mbed-os-storage-littlefs
+    mbed-os-mbedtls
+    mbed-os-storage-kvstore
+    mbed-os-storage-qspif
+    mbed-os-storage-flashiap
+)
 
 mbed_generate_bin_hex(${APP_TARGET})
 
