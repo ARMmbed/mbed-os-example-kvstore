@@ -24,13 +24,14 @@ target_sources(${APP_TARGET}
 )
 
 target_link_libraries(${APP_TARGET}
-    mbed-os
-    mbed-os-storage-fat
-    mbed-os-storage-littlefs
-    mbed-os-mbedtls
-    mbed-os-storage-kvstore
-    mbed-os-storage-qspif
-    mbed-os-storage-flashiap
+    PRIVATE
+        mbed-os
+        mbed-storage-fat
+        mbed-storage-littlefs
+        mbed-mbedtls
+        mbed-storage-kvstore
+        mbed-storage-qspif
+        mbed-storage-flashiap
 )
 
 mbed_generate_bin_hex(${APP_TARGET})
