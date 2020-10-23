@@ -8,6 +8,8 @@ set(MBED_ROOT ${CMAKE_CURRENT_SOURCE_DIR}/mbed-os CACHE INTERNAL "")
 set(MBED_CONFIG_PATH ${CMAKE_CURRENT_SOURCE_DIR}/.mbedbuild CACHE INTERNAL "")
 set(APP_TARGET mbed-os-example-kvstore)
 
+include(${MBED_ROOT}/tools/cmake/app.cmake)
+
 add_subdirectory(${MBED_ROOT})
 
 add_executable(${APP_TARGET})
@@ -24,13 +26,14 @@ target_sources(${APP_TARGET}
 )
 
 target_link_libraries(${APP_TARGET}
-    mbed-os
-    mbed-os-storage-fat
-    mbed-os-storage-littlefs
-    mbed-os-mbedtls
-    mbed-os-storage-kvstore
-    mbed-os-storage-qspif
-    mbed-os-storage-flashiap
+    PRIVATE
+        mbed-os
+        mbed-storage-fat
+        mbed-storage-littlefs
+        mbed-mbedtls
+        mbed-storage-kvstore
+        mbed-storage-qspif
+        mbed-storage-flashiap
 )
 
 mbed_generate_bin_hex(${APP_TARGET})
