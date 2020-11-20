@@ -31,7 +31,6 @@ target_link_libraries(${APP_TARGET}
         mbed-storage-littlefs
         mbed-mbedtls
         mbed-storage-kvstore
-        mbed-storage-kv-global-api
         mbed-storage-qspif
         mbed-storage-flashiap
 )
