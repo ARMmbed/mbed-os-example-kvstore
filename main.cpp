@@ -20,12 +20,16 @@
 #include <string.h>
 #include "KVStore.h"
 #include "kvstore_global_api.h"
+#include "DeviceKey.h"
 
 using namespace mbed;
 
 #define EXAMPLE_KV_VALUE_LENGTH 64
 #define EXAMPLE_KV_KEY_LENGTH 32
 #define err_code(res) MBED_GET_ERROR_CODE(res)
+
+#define STR_EXPAND(tok) #tok
+#define STR(tok) STR_EXPAND(tok)
 
 void kv_store_global_api_example();
 
@@ -58,6 +62,11 @@ void kv_store_global_api_example()
     printf("kv_reset\n");
     res = kv_reset("/kv/");
     printf("kv_reset -> %d\n", err_code(res));
+
+    if (strcmp(STR(MBED_CONF_STORAGE_STORAGE_TYPE), "TDB_EXTERNAL") == 0) {
+        res = DeviceKey::get_instance().generate_root_of_trust();
+        printf("DeviceKey::get_instance().generate_root_of_trust() -> %d\n", res);
+    }
 
     /* Set First 'Dummy' Key/Value pair with unprotected clear value data */
     printf("kv_set first dummy key\n");
