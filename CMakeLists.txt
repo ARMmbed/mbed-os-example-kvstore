@@ -27,13 +27,7 @@ target_sources(${APP_TARGET}
 target_link_libraries(${APP_TARGET}
     PRIVATE
         mbed-os
-        mbed-storage-fat
-        mbed-storage-littlefs
-        mbed-mbedtls
         mbed-storage-kvstore
-        mbed-storage-kv-global-api
-        mbed-storage-qspif
-        mbed-storage-flashiap
 )
 
 mbed_set_post_build(${APP_TARGET})
