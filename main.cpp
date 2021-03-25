@@ -63,7 +63,9 @@ void kv_store_global_api_example()
     res = kv_reset("/kv/");
     printf("kv_reset -> %d\n", err_code(res));
 
-    if (strcmp(STR(MBED_CONF_STORAGE_STORAGE_TYPE), "TDB_EXTERNAL") == 0) {
+    if (strcmp(STR(MBED_CONF_STORAGE_STORAGE_TYPE), "TDB_INTERNAL") != 0) {
+        // Generate DeviceKey Root of Trust for non-internal storage types
+        // as SecureStore requires
         res = DeviceKey::get_instance().generate_root_of_trust();
         printf("DeviceKey::get_instance().generate_root_of_trust() -> %d\n", res);
     }
