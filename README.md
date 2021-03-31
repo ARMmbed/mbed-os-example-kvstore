@@ -59,7 +59,7 @@ to set everything up.
 
 From the command-line, import the example:
 
-``` commandline
+``` sh
 mbed import mbed-os-example-kvstore
 cd mbed-os-example-kvstore
 ```
@@ -69,7 +69,7 @@ cd mbed-os-example-kvstore
 Invoke `mbed compile`, and specify the name of your platform and your favorite
 toolchain (`GCC_ARM`, `ARM`, `IAR`). For example, for the ARM Compiler 5:
 
-``` commandline
+``` sh
 mbed compile -m K64F -t ARM
 ```
 
