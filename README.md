@@ -6,6 +6,7 @@ This example demonstrates how to use the Mbed OS Key Value Storage Global API.
 KVStore is a key-value storage based API over a block device.
 Mbed OS provides several KVStore implementation options, that can be optimized to
 the specific application requirements and target hardware:
+
 - TDBStore - Default implementation of the KVStore API. It provides static wear-leveling and quick access for when you have a small number of KV pairs.
 - FileSystemStore - Class that provides a key-value store API on top of a POSIX-like file system API.
 - SecureStore - Class that provides encryption, authentication and rollback protection on top of the KVStore API. It requires two KVStore implementations, one that provides the storage for the KV pairs and one providing storage for the CMACs that protect KV pairs stored in the KVStore.
@@ -38,38 +39,37 @@ The example contains an [mbed_app.json](./mbed_app.json) configuration file that
 ## Hardware requirements
 
 KVStore general API may use several types of key/value storage classes, according to the configuration,  that run on top of an underlying Block Device. Each type has different HW requirements for the underlying Block Device.
+
 1. TDB_INTERNAL - may run on top of flash Block Device only (typically internal flash)
-2. TDB_EXTERNAL - requires external flash for the key/value storage and typically internal flash for its replay protection storage.
-3. TDB_EXTERNAL_NO_RBP - requires external flash for the key/value storage
-4. FILESYSTEM - may use either flash or SD card for the key/value storage and typically internal flash for its replay protection storage.
-5. FILESYSTEM_NO_RBP - may use either flash or SD card for the key/value storage
+1. TDB_EXTERNAL - requires external flash for the key/value storage and internal flash for its replay protection storage.
+1. FILESYSTEM - may use either flash or SD card for the key/value storage and internal flash for its replay protection storage.
 
-## License and contributions 
+## License and contributions
 
-The software is provided under [Apache-2.0 license](./LICENSE). Contributions to this project are accepted under the same license. Please see [contributing.md](./CONTRIBUTING.md) for more info. 
+The software is provided under [Apache-2.0 license](./LICENSE). Contributions to this project are accepted under the same license. Please see [contributing.md](./CONTRIBUTING.md) for more info.
 
 This project contains code from other projects. The original license text is included in those source files. They must comply with our [license guide](https://os.mbed.com/docs/latest/reference/license.html)
 
 ## Usage
 
-#### Import the example
+### Import the example
 
 Make sure you have an Mbed development environment set up. [Get started with Mbed OS](https://os.mbed.com/docs/latest/tutorials/your-first-program.html)
 to set everything up.
 
 From the command-line, import the example:
 
-```
+``` commandline
 mbed import mbed-os-example-kvstore
 cd mbed-os-example-kvstore
 ```
 
-#### Compile the example
+### Compile the example
 
 Invoke `mbed compile`, and specify the name of your platform and your favorite
 toolchain (`GCC_ARM`, `ARM`, `IAR`). For example, for the ARM Compiler 5:
 
-```
+``` commandline
 mbed compile -m K64F -t ARM
 ```
 
@@ -103,7 +103,7 @@ Total Flash memory (text + data): 116718(+0) bytes
 Image: ./BUILD/K64F/ARM/mbed-os-example-kvstore.bin
 ```
 
-#### Run the example
+### Run the example
 
 1. Connect your Mbed Enabled device to the computer over USB.
 1. Copy the binary file to the Mbed Enabled device.
@@ -155,11 +155,11 @@ kv_reset format kvstore (including write-once)
 kv_reset -> 0
 ```
 
-#### Troubleshooting
+### Troubleshooting
 
 If you have problems, you can review the [documentation](https://os.mbed.com/docs/latest/tutorials/debugging.html)
 for suggestions on what could be wrong and how to fix it.
 
 ## KVStore Configuration
 
-The Global KVStore API options can be set up in the higher level Mbed OS KVSTore retargetting layer [json configuration](https://github.com/ARMmbed/mbed-os/blob/master/features/storage/kvstore/conf/mbed_lib.json)
+The Global KVStore API options can be set up in the higher level Mbed OS KVSTore retargetting layer [json configuration](https://github.com/ARMmbed/mbed-os/blob/master/features/storage/kvstore/conf/mbed_lib.json).
